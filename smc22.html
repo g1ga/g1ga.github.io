@@ -36,6 +36,27 @@
     li{
       margin-bottom: 15px;
     }
+    
+    .buttonContainer{
+            position: relative;
+            display: flex; /* Use flexbox to align children */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+    }
+    .button {
+          position: absolute; /* Absolute positioning */
+            top: 220px; /* 100 pixels from the top */
+            background-color: blue; /* Orange background */
+            border: none; /* No border */
+            color: white; /* Black text */
+            padding: 15px 32px; /* Padding around the text */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Align next to other elements */
+            font-size: 16px; /* Font size */
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
   </style>
   <!-- end CSS-->
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
@@ -48,7 +69,10 @@
     <header>
     </header>
     <div id="main" role="main">
-      <img src="smc-24-closing-party-upd.jpg" alt="SMC 24" style="width: 100%"/>            
+      <div class="buttonContainer">        
+        <a href="https://bit.ly/SMCclosingparty" class="button">Acquista biglietti</a>
+      </div>      
+      <img src="smc-24-closing-party-upd.jpg" alt="SMC 24" style="width: 100%"/>      
       <img src="smc-24-workshop-catania.jpg" alt="SMC 24" style="width: 100%"/>            
     </div>
     <footer>
